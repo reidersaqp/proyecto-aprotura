@@ -1,6 +1,6 @@
-# Proyecto APROTUR Web
+# Proyecto APROTURA Web
 
-Este es el sitio web oficial de la asociacion APROTUR, desarrollado utilizando React, Next.js y TypeScript. El proyecto cuenta con un panel de administracion para la gestion de contenidos dinamicos y persistencia de datos local mediante un archivo de base de datos simulado.
+Este es el sitio web oficial de la asociacion APROTURA, desarrollado utilizando React, Next.js y TypeScript. El proyecto cuenta con un panel de administracion para la gestion de contenidos dinamicos y persistencia de datos local mediante un archivo de base de datos simulado.
 
 ## Caracteristicas Principales
 
