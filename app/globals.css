@@ -1,26 +1,307 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Inter:wght@300;400;500;600;700&display=swap');
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  /* APROTURA Brand Colors (Logo) */
+  --crimson: #9E1B1B;
+  --crimson-light: #C42B2B;
+  --crimson-dark: #7A1010;
+  --burgundy: #4A0E17;
+  --burgundy-deep: #2D0810;
+  --graphite: #1A1A1A;
+  --graphite-mid: #2D2D2D;
+  --graphite-light: #4A4A4A;
+  --chalk: #F7F7F9;
+  --chalk-dark: #EBEBEE;
+  --white: #FFFFFF;
+  --gold: #C9952A;
+  --gold-light: #E8B84B;
+  --gold-dark: #B5801B;
+
+  /* Typography (Outfit matches Joey/Flexo BCP font structure) */
+  --font-display: 'Outfit', system-ui, sans-serif;
+  --font-body: 'Outfit', system-ui, sans-serif;
+
+  /* Spacing & Borders (BCP Structural layout) */
+  --section-py: 5.5rem;
+  --container-px: 1.5rem;
+  --radius: 100px; /* BCP pill buttons style */
+  --radius-lg: 12px; /* BCP rounded cards layout */
+
+  /* BCP-Style Soft Shadows (Subtle brand tone) */
+  --shadow-sm: 0 4px 12px rgba(158, 27, 27, 0.04);
+  --shadow-md: 0 8px 24px rgba(158, 27, 27, 0.06);
+  --shadow-lg: 0 16px 40px rgba(158, 27, 27, 0.1);
+  --shadow-dark: 0 8px 30px rgba(74, 14, 23, 0.15);
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+html {
+  scroll-behavior: smooth;
+  font-size: 16px;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-body);
+  background-color: var(--chalk);
+  color: var(--graphite);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* ─── Typography ───────────────────────────────────────────── */
+h1, h2, h3, h4 {
+  font-family: var(--font-display);
+  line-height: 1.2;
+  color: var(--graphite);
+}
+
+h1 { font-size: clamp(2rem, 5vw, 3.5rem); font-weight: 800; }
+h2 { font-size: clamp(1.6rem, 3.5vw, 2.25rem); font-weight: 700; }
+h3 { font-size: clamp(1.2rem, 2.5vw, 1.6rem); font-weight: 600; }
+h4 { font-size: 1.1rem; font-weight: 600; }
+
+p { font-size: 0.95rem; color: var(--graphite-light); line-height: 1.7; }
+
+a { text-decoration: none; color: inherit; transition: all 0.2s ease; }
+
+/* ─── Container ─────────────────────────────────────────────── */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 var(--container-px);
+}
+
+/* ─── Buttons (BCP Pill Style, solid, clean) ─────────────────── */
+.btn-primary {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: var(--crimson);
+  color: var(--white);
+  padding: 0.75rem 2.25rem;
+  border-radius: var(--radius);
+  font-family: var(--font-body);
+  font-weight: 600;
+  font-size: 0.9rem;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  box-shadow: var(--shadow-sm);
+}
+.btn-primary:hover {
+  background: var(--crimson-light);
+  transform: translateY(-1px);
+}
+
+.btn-outline {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: transparent;
+  color: var(--crimson);
+  padding: 0.75rem 2.25rem;
+  border-radius: var(--radius);
+  font-family: var(--font-body);
+  font-weight: 600;
+  font-size: 0.9rem;
+  border: 2px solid var(--crimson);
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+.btn-outline:hover {
+  background: rgba(158, 27, 27, 0.05);
+}
+
+.btn-gold {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: var(--gold);
+  color: var(--white);
+  padding: 0.75rem 2.25rem;
+  border-radius: var(--radius);
+  font-family: var(--font-body);
+  font-weight: 700;
+  font-size: 0.95rem;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  box-shadow: var(--shadow-sm);
+}
+.btn-gold:hover {
+  background: var(--gold-light);
+  transform: translateY(-1px);
+}
+
+/* ─── Section Titles ────────────────────────────────────────── */
+.section-label {
+  display: inline-block;
+  color: var(--crimson);
+  font-size: 0.78rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  margin-bottom: 0.75rem;
+}
+
+.section-title {
+  font-family: var(--font-display);
+  color: var(--graphite);
+  margin-bottom: 0.75rem;
+}
+
+.section-subtitle {
+  color: var(--graphite-light);
+  font-size: 1rem;
+  max-width: 600px;
+  line-height: 1.65;
+}
+
+/* ─── Cards (BCP Borderless Soft-Shadow Cards) ──────────────── */
+.card {
+  background: var(--white);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-md);
+  overflow: hidden;
+  transition: all 0.25s ease;
+  border: none;
+}
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-lg);
+}
+
+/* ─── Divider ───────────────────────────────────────────────── */
+.divider-crimson {
+  width: 50px;
+  height: 4px;
+  background: var(--gold);
+  border-radius: 999px;
+  margin: 1rem 0 1.5rem;
+}
+
+/* ─── Badge ─────────────────────────────────────────────────── */
+.badge-free {
+  background: #1E7E34;
+  color: white;
+  font-size: 0.7rem;
+  font-weight: 700;
+  padding: 0.25rem 0.75rem;
+  border-radius: 999px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+.badge-paid {
+  background: var(--gold);
+  color: white;
+  font-size: 0.7rem;
+  font-weight: 700;
+  padding: 0.25rem 0.75rem;
+  border-radius: 999px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+.badge-alert {
+  background: var(--crimson);
+  color: white;
+  font-size: 0.7rem;
+  font-weight: 700;
+  padding: 0.25rem 0.75rem;
+  border-radius: 999px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+/* ─── Scrollbar ─────────────────────────────────────────────── */
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: var(--chalk-dark); }
+::-webkit-scrollbar-thumb { background: var(--crimson); border-radius: 3px; }
+::-webkit-scrollbar-thumb:hover { background: var(--crimson-dark); }
+
+/* ─── Animations ────────────────────────────────────────────── */
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(30px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+@keyframes pulse-slow {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.7; }
+}
+.animate-fadeInUp { animation: fadeInUp 0.7s ease forwards; }
+.animate-fadeIn   { animation: fadeIn 0.5s ease forwards; }
+
+/* ─── Nav Active ────────────────────────────────────────────── */
+.nav-link {
+  position: relative;
+  font-weight: 500;
+  font-size: 0.9rem;
+  letter-spacing: 0.03em;
+  color: var(--graphite);
+  transition: color 0.2s;
+}
+.nav-link::after {
+  content: '';
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: var(--crimson);
+  border-radius: 1px;
+  transition: width 0.3s ease;
+}
+.nav-link:hover { color: var(--crimson); }
+.nav-link:hover::after { width: 100%; }
+
+/* ─── Glass Effect ──────────────────────────────────────────── */
+.glass {
+  background: rgba(255,255,255,0.85);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255,255,255,0.5);
+}
+
+/* ─── Hero Gradient Overlay ─────────────────────────────────── */
+.hero-gradient {
+  background: linear-gradient(
+    135deg,
+    rgba(74,14,23,0.92) 0%,
+    rgba(158,27,27,0.80) 50%,
+    rgba(74,14,23,0.88) 100%
+  );
+}
+
+/* ─── Stat Item ─────────────────────────────────────────────── */
+.stat-number {
+  font-family: var(--font-display);
+  font-size: 3rem;
+  font-weight: 900;
+  color: var(--crimson);
+  line-height: 1;
+}
+.stat-label {
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: var(--graphite-light);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+/* ─── Responsive ────────────────────────────────────────────── */
+@media (max-width: 768px) {
+  :root {
+    --section-py: 3rem;
+    --container-px: 1rem;
+  }
 }

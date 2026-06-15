@@ -1,36 +1,45 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Proyecto APROTUR Web
 
-## Getting Started
+Este es el sitio web oficial de la asociacion APROTUR, desarrollado utilizando React, Next.js y TypeScript. El proyecto cuenta con un panel de administracion para la gestion de contenidos dinamicos y persistencia de datos local mediante un archivo de base de datos simulado.
 
-First, run the development server:
+## Caracteristicas Principales
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+1. Panel de Administracion (/admin):
+   - Gestion de anuncios destacados (Banners superiores).
+   - Gestion de presentaciones de diapositivas principales (Slides).
+   - Gestion de Galeria de Fotos y Videos con soporte para enlaces de redes sociales (YouTube, Facebook, TikTok, Instagram, Directo).
+   - Gestion de Noticias y Comunicados, que incluye la creacion, edicion de contenido, imagenes adjuntas, y seleccionador de fechas nativo.
+   - Modulo de revision de documentos y solicitudes cargados a traves del portal virtual Mesa de Partes.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+2. Seccion de Noticias:
+   - Visualizacion dinamica de comunicados y novedades de la asociacion.
+   - Soporte para multiples fotografias por noticia con vista previa interactiva.
+   - Formateo automatico de fechas seleccionadas al estilo local de lectura.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+3. Mesa de Partes:
+   - Formulario interactivo para que los usuarios puedan registrar solicitudes oficiales adjuntando archivos digitales.
+   - Panel interno en administracion para evaluar el estado y actualizar las solicitudes recibidas.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Requisitos Previos
 
-## Learn More
+Asegurate de tener instalado Node.js (version 18 o superior recomendada) en tu sistema de desarrollo.
 
-To learn more about Next.js, take a look at the following resources:
+## Instalacion y Ejecucion Local
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Sigue los siguientes pasos para poner en marcha el proyecto de manera local:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+1. Instalar dependencias del proyecto:
+   npm install
 
-## Deploy on Vercel
+2. Ejecutar el servidor en modo desarrollo:
+   npm run dev
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+3. Acceder a la aplicacion:
+   Abre tu navegador de preferencia e ingresa a la direccion http://localhost:3000
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Construccion para Produccion
+
+Para generar la compilacion optimizada lista para produccion, utiliza el comando:
+npm run build
+
+Este comando ejecutara la verificacion de tipos con TypeScript y empaquetara la aplicacion para su distribucion final.

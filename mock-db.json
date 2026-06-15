@@ -1,0 +1,103 @@
+{
+  "announcement": null,
+  "slides": [
+    {
+      "badge": "Curso Oficial 2026",
+      "title": "¡Bienvenidos a APROTURA 2026!",
+      "highlightText": "Guía Oficial",
+      "description": "hola como estas ",
+      "ctaText": "Inscríbete aquí",
+      "ctaLink": "/cursos",
+      "btnStyle": "primary",
+      "image": "/uploads/1780781254242_portada.jpg",
+      "id": "slide_1780781257795",
+      "waves": [
+        {
+          "color": "var(--crimson)",
+          "size": 400,
+          "top": -100,
+          "right": -100,
+          "opacity": 0.06
+        },
+        {
+          "color": "var(--gold)",
+          "size": 300,
+          "bottom": -50,
+          "right": 150,
+          "opacity": 0.04
+        }
+      ]
+    },
+    {
+      "badge": "concurso",
+      "title": "Ingresa al aula virtual para tus clases",
+      "highlightText": "palabra",
+      "description": "Accede de forma directa a tus cursos activos, temarios y recursos de aprendizaje subidos por tus docentes.",
+      "ctaText": "Aula Virtual",
+      "ctaLink": "/login-alumno",
+      "btnStyle": "primary",
+      "image": "/uploads/1780781313180_leon.jpg",
+      "id": "slide_1780781330124",
+      "waves": [
+        {
+          "color": "var(--crimson)",
+          "size": 400,
+          "top": -100,
+          "right": -100,
+          "opacity": 0.06
+        },
+        {
+          "color": "var(--gold)",
+          "size": 300,
+          "bottom": -50,
+          "right": 150,
+          "opacity": 0.04
+        }
+      ]
+    }
+  ],
+  "noticias": [
+    {
+      "id": "news_1780806900946",
+      "titulo": "aniversario de la asociacion aprotura",
+      "categoria": "Eventos",
+      "resumen": "💃🕺| ¡Revivamos nuestra celebración por aniversario! 🎉\n¡VIVIÓ EL DOMINGO! 🎉 Celebramos con mucha alegría el VII aniversario de nuestra Asociación de Profesionales y Técnicos de Turismo de Arequipa, tarde de emociones, reconocimiento y mucho más. ¡Gracias a todos por ser parte de esta gran familia! 🌟#Aniversario \n#Aprotura #Gestion #2026viralvideo #turismo #tradiciones #Costumbres #Arequipa ",
+      "lugar": "Arequipa",
+      "fecha": "26 Ago 2026",
+      "imagen": "/uploads/1780806896518_leon.jpg",
+      "imagenes": [
+        "https://res.cloudinary.com/de0onaqvk/image/upload/v1780868108/aprotur-web/ywml9ypbyzc6gwlhswm2.jpg"
+      ],
+      "contenido": "💃🕺| ¡Revivamos nuestra celebración por aniversario! 🎉\n¡VIVIÓ EL DOMINGO! 🎉 Celebramos con mucha alegría el VII aniversario de nuestra Asociación de Profesionales y Técnicos de Turismo de Arequipa, tarde de emociones, reconocimiento y mucho más. ¡Gracias a todos por ser parte de esta gran familia! 🌟#Aniversario \n#Aprotura #Gestion #2026viralvideo #turismo #tradiciones #Costumbres #Arequipa Ver menos\n💃🕺| ¡Revivamos nuestra celebración por aniversario! 🎉\n¡VIVIÓ EL DOMINGO! 🎉 Celebramos con mucha alegría el VII aniversario de nuestra Asociación de Profesionales y Técnicos de Turismo de Arequipa, tarde de emociones, reconocimiento y mucho más. ¡Gracias a todos por ser parte de esta gran familia! 🌟#Aniversario \n#Aprotura #Gestion #2026viralvideo #turismo #tradiciones #Costumbres #Arequipa Ver menos\n💃🕺| ¡Revivamos nuestra celebración por aniversario! 🎉\n¡VIVIÓ EL DOMINGO! 🎉 Celebramos con mucha alegría el VII aniversario de nuestra Asociación de Profesionales y Técnicos de Turismo de Arequipa, tarde de emociones, reconocimiento y mucho más. ¡Gracias a todos por ser parte de esta gran familia! 🌟#Aniversario \n#Aprotura #Gestion #2026viralvideo #turismo #tradiciones #Costumbres #Arequipa Ver menos\n💃🕺| ¡Revivamos nuestra celebración por aniversario! 🎉\n¡VIVIÓ EL DOMINGO! 🎉 Celebramos con mucha alegría el VII aniversario de nuestra Asociación de Profesionales y Técnicos de Turismo de Arequipa, tarde de emociones, reconocimiento y mucho más. ¡Gracias a todos por ser parte de esta gran familia! 🌟#Aniversario \n#Aprotura #Gestion #2026viralvideo #turismo #tradiciones #Costumbres #Arequipa Ver menos\n💃🕺| ¡Revivamos nuestra celebración por aniversario! 🎉\n¡VIVIÓ EL DOMINGO! 🎉 Celebramos con mucha alegría el VII aniversario de nuestra Asociación de Profesionales y Técnicos de Turismo de Arequipa, tarde de emociones, reconocimiento y mucho más. ¡Gracias a todos por ser parte de esta gran familia! 🌟#Aniversario \n#Aprotura #Gestion #2026viralvideo #turismo #tradiciones #Costumbres #Arequipa Ver menos\n💃🕺| ¡Revivamos nuestra celebración por aniversario! 🎉\n¡VIVIÓ EL DOMINGO! 🎉 Celebramos con mucha alegría el VII aniversario de nuestra Asociación de Profesionales y Técnicos de Turismo de Arequipa, tarde de emociones, reconocimiento y mucho más. ¡Gracias a todos por ser parte de esta gran familia! 🌟#Aniversario \n#Aprotura #Gestion #2026viralvideo #turismo #tradiciones #Costumbres #Arequipa Ver menos💃🕺| ¡Revivamos nuestra celebración por aniversario! 🎉\n¡VIVIÓ EL DOMINGO! 🎉 Celebramos con mucha alegría el VII aniversario de nuestra Asociación de Profesionales y Técnicos de Turismo de Arequipa, tarde de emociones, reconocimiento y mucho más. ¡Gracias a todos por ser parte de esta gran familia! 🌟#Aniversario \n#Aprotura #Gestion #2026viralvideo #turismo #tradiciones #Costumbres #Arequipa Ver menos\n💃🕺| ¡Revivamos nuestra celebración por aniversario! 🎉\n¡VIVIÓ EL DOMINGO! 🎉 Celebramos con mucha alegría el VII aniversario de nuestra Asociación de Profesionales y Técnicos de Turismo de Arequipa, tarde de emociones, reconocimiento y mucho más. ¡Gracias a todos por ser parte de esta gran familia! 🌟#Aniversario \n#Aprotura #Gestion #2026viralvideo #turismo #tradiciones #Costumbres #Arequipa Ver menos\n💃🕺| ¡Revivamos nuestra celebración por aniversario! 🎉\n¡VIVIÓ EL DOMINGO! 🎉 Celebramos con mucha alegría el VII aniversario de nuestra Asociación de Profesionales y Técnicos de Turismo de Arequipa, tarde de emociones, reconocimiento y mucho más. ¡Gracias a todos por ser parte de esta gran familia! 🌟#Aniversario \n#Aprotura #Gestion #2026viralvideo #turismo #tradiciones #Costumbres #Arequipa Ver menos\n"
+    },
+    {
+      "titulo": "HTTHHT",
+      "categoria": "Eventos",
+      "resumen": "THHTT",
+      "lugar": "Arequipa",
+      "fecha": "7 Jun 2026",
+      "imagen": "https://res.cloudinary.com/de0onaqvk/image/upload/v1780867567/aprotur-web/l8rxx129rayxutu5tcsv.png",
+      "imagenes": [
+        "https://res.cloudinary.com/de0onaqvk/image/upload/v1780867567/aprotur-web/l8rxx129rayxutu5tcsv.png"
+      ],
+      "link": "https://www.facebook.com/share/v/193TeS1phu/",
+      "contenido": "URTHTH",
+      "id": "news_1780867588728"
+    },
+    {
+      "titulo": "THFFH",
+      "categoria": "Eventos",
+      "resumen": "HDTHDDHH",
+      "lugar": "Arequipa",
+      "fecha": "7 Jun 2026",
+      "imagen": "https://res.cloudinary.com/de0onaqvk/image/upload/v1780867596/aprotur-web/i0yhg3zspgsey6xqk3kh.jpg",
+      "imagenes": [
+        "https://res.cloudinary.com/de0onaqvk/image/upload/v1780867596/aprotur-web/i0yhg3zspgsey6xqk3kh.jpg",
+        "https://res.cloudinary.com/de0onaqvk/image/upload/v1780867600/aprotur-web/lscr5ic4m82qbqtyrj7c.jpg"
+      ],
+      "link": "",
+      "contenido": "DHTH",
+      "id": "news_1780867640319"
+    }
+  ]
+}
